@@ -1,0 +1,58 @@
+/* 
+Global Styles
+Thomas Boxall <contact@thomasboxall.net> (github.com/thomasboxall)
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    background-color: #121212;
+    color: #ffffff;
+    --theme-color: #BB86FC;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--theme-color);
+    margin: 0;
+    height: 1.5em;
+    text-align: center;    
+}
+
+footer p{
+    margin: 0;
+}
+
+a{
+    color: #ffffff;
+}
+
+.accent{
+    color: var(--theme-color)
+}
+
+blockquote{
+    padding:10px 40px 10px 15px;
+    margin: 0px;
+    border-left: 4px solid var(--theme-color);
+}
+
+main{
+    width: 60%;
+    margin: 0px auto;
+    padding-bottom: 2em;
+}
+
+
+@media (orientation: portrait) {
+    main {
+      width: 90%; 
+    }
+}
