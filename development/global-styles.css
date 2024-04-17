@@ -24,6 +24,7 @@ footer{
     margin: 0;
     height: 1.5em;
     text-align: center;    
+    font-size: small;
 }
 
 footer p{
@@ -50,6 +51,23 @@ main{
     padding-bottom: 2em;
 }
 
+details summary{
+    font-weight:500;
+    
+}
+
+details[open] section{
+    border-left: 2px dashed var(--theme-color);
+    padding-left: 0.5em;
+}
+
+details{
+    margin-bottom: 1em;
+}
+
+p {
+    margin-top: 8px;
+}
 
 @media (orientation: portrait) {
     main {
