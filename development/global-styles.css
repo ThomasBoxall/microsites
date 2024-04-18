@@ -45,6 +45,11 @@ blockquote{
     border-left: 4px solid var(--theme-color);
 }
 
+blockquote cite{
+    color: grey;
+    font-size: small;
+}
+
 main{
     width: 60%;
     margin: 0px auto;
@@ -69,8 +74,28 @@ p {
     margin-top: 8px;
 }
 
+table{
+    border-spacing: 0.5em 0.25em;
+    width: 100%;
+}
+
+table th{
+    background-color: var(--theme-color);
+}
+
+table td{
+    border-bottom: 1px solid white;
+}
+
+table td, table th{
+    padding: 1em;
+}
+
 @media (orientation: portrait) {
     main {
       width: 90%; 
+    }
+    footer{
+        font-size:medium;
     }
 }
