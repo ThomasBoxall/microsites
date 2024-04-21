@@ -4,6 +4,7 @@
 * Test with HTML kitchen sink: https://codepen.io/chriscoyier/pen/JpLzjd
 * Links on the multisite site
 * Responsivity on Mobile
+* error pages
 
 ## CDN Deployment Things
 * Colours
