@@ -1,0 +1,24 @@
+/* 
+Single Page Static Site CSS, vaguely responsive on mobile, vaguely.
+Thomas Boxall <contact@thomasboxall.net> (github.com/thomasboxall)
+*/
+
+@import 'global-styles.css';
+
+main{
+    padding-top: 12em;
+}
+
+
+h1{
+    font-size: 700%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+
+@media (orientation: portrait) {
+    main {
+      padding-top: 5em;
+    }
+}
