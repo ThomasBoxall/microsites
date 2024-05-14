@@ -1,7 +1,9 @@
 # TODO
 
 ## Development
-* error pages
+* error pages - make these work properly with ssi etc
+* add callouts, maybe an info, warning, any more?
+* add basic text stlying to be used in `<span>`s (bf, it, ul, etc)
 
 ## CDN Deployment Things
 * Colours
