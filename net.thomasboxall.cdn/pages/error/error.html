@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<title>Oops, that wasn't supposed to happen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdn.thomasboxall.net/css/single-page.css">
+<style>
+    html{
+        --theme-color: #A74B2D;
+    }
+</style>
+
+<main>
+    <h1><!--# echo var="status" default="Oops" --><span class="accent">.</span></h1>
+    <p><!--# echo var="status_text" default="Something goes wrong" --></p>
+    <p>So, yeah. This is a bit awkward. That wasn't supposed to happen.</p>
+    <p id="returnLink"></p>
+
+</main>
+
+<footer>
+    <p>Made with ❤️  &bull; &copy; <a href="https://thomasboxall.net">Thomas Boxall</a> 2024</p>
+</footer>
+
+<script>
+    let link = document.getElementById("returnLink")
+    link.innerHTML = "<a href='"+window.location.origin+"'> Head back to "+ window.location.hostname +"</a>.";
+</script>
