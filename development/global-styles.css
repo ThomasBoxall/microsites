@@ -12,6 +12,10 @@ html{
     font-family: 'Noto Sans', sans-serif;
 }
 
+#copyright-year::before{
+    content: "2026";
+}
+
 body{
     margin: 0;
 }
