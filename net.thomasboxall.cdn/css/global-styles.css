@@ -94,6 +94,11 @@ li{
     padding-bottom: 0.25em;
 }
 
+code{
+    background-color: #413F42;
+    padding: 0.125em;
+}
+
 table{
     border-spacing: 0.5em 0.25em;
     width: 100%;
