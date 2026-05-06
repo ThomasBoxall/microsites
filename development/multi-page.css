@@ -33,3 +33,13 @@ h3{
     margin: 0px;
     font-size:small;
 }
+
+.btn{
+    padding: 0.5em;
+    background-color: var(--theme-color);
+}
+
+.btn:hover{
+    background-color: white;
+    color: var(--theme-color);
+}
