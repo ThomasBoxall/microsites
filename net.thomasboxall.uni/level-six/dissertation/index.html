@@ -20,21 +20,25 @@
     <section>
         <h2>The Project</h2>
 
-        <p>Going into my first meeting with my Supervisor with an idea and being told "that's too simple if you want a 1st" was an interesting way to start my final year project. However in saying this, if I hadn't listened to his advice, my year may have gone very differently.</p>
+        <p>Going into my first meeting with my Supervisor with an idea and being told "that's too simple if you want a first" was an interesting way to start my final year project. However in saying this, if I hadn't listened to his advice, my year may have gone very differently.</p>
         <p>My dissertation played on the idea of virtual networking in education settings. Anyone who has been a part of a Computing course in FE/HE environments has probably encountered some networking module where you learn IP addressing, learn routing and then maybe get a practical experience if you're lucky. But you're more likely to be lumbered with a simulation or emulation environment rather than real world hardware. Don't get me wrong, my literature review found that both are important - but the existing virtual offerings are a bit pants for beginners.</p>
         <p>Netshed (great name, am I right) challenged these mature virtual environments and proved that it is possible to create a simple network simulation environment using lightweight Linux virtual machines acting as network appliances.</p>
 
         <h2>The How</h2>
-        <p>This project wasn't actually to complex to pull together. Finding the different components and working out if they would play nicely together was the complex bit.</p>
-        <p>Turns out, there's a nifty package called FRR, which is a fork of Quagga, that does all the routing for you. FRR exposes a Cisco IOS style CLI & configuration file which can be programmatically edited to build the desired configuration.</p>
-        <p></p>
+        <p>Netshed has three main components: the VM(s), the hypervisor, and a web-based management interface.</p>
+        <p>The Hypervisor already existed - that's far too complex to build from the ground up for this project. I chose Proxmox, partly for it's open source nature (the best kind of project), but mostly because it has a great API which fitted into the Architecture of the wider project.</p>
+        <p>The VMs ran Debian Linux which ran a custom piece of management software exposing a HTTP REST API for the main piece of software to communicate with. There's a nifty package called FRR which can enable a Linux machine to act as a router, including running routing protocols such as RIP and OSPF. FRR exposes a Cisco IOS style command interface and configuration file making it entirely usable for a project like this.</p>
+        <p>At the core of the project sat a web based management interface. Written in raw JavaScript on the client side and PHP on the 'backend' - this provided a user interface and centralised command & control over the VMs and Hypervisor. The frontend used the Bootstrap UI framework to provide a consistent and aesthetic style, while functioning efficiently. The backend component was constructed around a series of PHP 'API routes' which could be called from the frontend to action certain events. This wasn't the most efficient way to have designed the architecture, however it worked appropriately.</p>
+        <p>Through using a mix of off-the-shelf software components, such as Proxmox, FRR and Bootstrap, and a trio of custom developed applications - it was possible to make a significant amount of progress with the application in one year. Ultimately the project didn't quite complete everything it set out to complete, which leaves some room for future work.</p>
 
         <h2>Where Next?</h2>
-        <p>I, most certainly, do not plan on doing any more development work on this project. It was fun, and a challenge, but it's not something I see an interest in developing further.</p>
-        <p>If you are a student and you see this and you would like to develop it further: reach out to me via hello@thomasboxall.net to discuss.</p>
+        <p>I don't plan on doing any more development work on this project. It was fun, and a challenge, but it's not something I see an interest in developing further.</p>
+        <p>If you are a student and you see this and you would like to develop it further: reach out to me via hello@thomasboxall.net to discuss. (My supervisor is especially keen for this to happen)</p>
 
         <h2>The Output</h2>
-
+        <p>My dissertation did produce a functioning application. While a project in itself to deploy - it would be possible to stand an environment up and use the application in an education setting.</p>
+        <p>The source code and instructions for deployment can be found in the <a href="https://github.com/ThomasBoxall/netshed">netshed repository</a> on my GitHub.</p>
+        <p>The formal 145 page write up can be found <a href="/static/l6-dissertation.pdf">in my dissertation</a>.</p>
 
 
         
